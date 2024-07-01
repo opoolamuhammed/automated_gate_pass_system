@@ -1,0 +1,55 @@
+WELCOME TO THE AUTOMATED GATE PASS SYSTEM FOR FEDERAL UNIVERSITY, GUSAU
+
+
+
+Supervisor and Source of Project Idea/Topic
+-------------------------------------------
+Dr. Samaila Musa
+
+
+
+Designed and Developed By
+-------------------------
+Opoola Muhammed
+
+
+
+STEP-BY-STEP INSTALLATION INSTRUCTIONS
+--------------------------------------
+
+Step 1: Extract the zip file
+Download and extract the zip file containing the source code and database
+file to a folder on your local machine.
+
+Step 2: Set up a local server
+Install a local server software like XAMPP, MAMP, or WAMP, depending on your
+operating system.
+
+Step 3: Move the extracted folder to the local server's document root
+For example, if you're using XAMPP on Windows, move the folder to 
+C:\xampp\htdocs\.
+
+Step 4: Import the database
+Open phpMyAdmin (usually accessible at http://localhost/phpmyadmin).
+Click on the "Import" tab and select the database file from the extracted zip
+file (database/automated_gate_pass_system.sql). Click "Go" to import the 
+database.
+
+Step 5: Run the PHP software
+Access the PHP software through a web browser by navigating to 
+http://localhost/<software_folder_name> (replace <software_folder_name> with
+the actual folder name).
+
+Step 6: The login credentials are below.
+
+
+
+Manager Login Details
+---------------------
+username: opoolathemanager
+password: passpass
+
+Guard Login Details
+-------------------
+username: opoolatheguard
+password: passpass

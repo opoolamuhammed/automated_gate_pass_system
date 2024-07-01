@@ -1,0 +1,82 @@
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .printable-container, .printable-container * {
+        visibility: visible;
+    }
+
+    .printable-container {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        visibility: visible;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table th, .table td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .table thead th {
+        background-color: #f2f2f2;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    @page {
+        size: auto; /* Use the printer's default paper size */
+        margin: 10mm 10mm 10mm 10mm; /* Customizable margins */
+    }
+
+    .printable-container {
+        page-break-after: auto;
+    }
+
+    .printable-container table {
+        page-break-inside: avoid;
+    }
+
+    /* Specific styles for portrait orientation */
+    @media print and (orientation: portrait) {
+        @page {
+            size: portrait;
+        }
+
+        .table th, .table td {
+            padding: 6px;
+            font-size: 12px;
+        }
+
+        .printable-container {
+            margin: 10mm;
+        }
+    }
+
+    /* Specific styles for landscape orientation */
+    @media print and (orientation: landscape) {
+        @page {
+            size: landscape;
+        }
+
+        .table th, .table td {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .printable-container {
+            margin: 10mm 5mm; /* Less margin on the sides */
+        }
+    }
+}
